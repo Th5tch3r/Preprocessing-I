@@ -90,29 +90,40 @@ header {
 	justify-content: flex-end;
 
 	@media (max-width: 500px) {
-		display: flex;
-		flex-direction: column;
+		display: block;
+		margin-top: 30px;
 	}
 	.logo {
 		margin-top: 30px;
 		margin-right: 450px;
 		height: 100px;
 		width: 300px;
+
+		@media (max-width: 500px) {
+			
+		}
+
 	}
 
 	nav {
 		margin-top: 60px;
 		margin-right: 50px;
 
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 50px;
+
 		a {
 			margin-top: 40px;
 			margin-right: 20px;
 			text-decoration: none;
 
-			@media (max-width: 500px) {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+			@media (max-width: 500px)  {
+				// display: flex;
+				// flex-direction: column;
+				// justify-content: center;
 			}
 			 
 		}
@@ -132,6 +143,12 @@ header {
 		 width: 600px;
 		 margin-left: 300px;
 		 margin-top: 30px;
+
+		 @media (max-width:500px) {
+			margin: 0px; 
+			height: 200px;
+			 width: 500px;
+		 }
 	 }
 
 	 .h {
